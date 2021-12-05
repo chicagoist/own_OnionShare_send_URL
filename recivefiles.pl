@@ -9,7 +9,7 @@ use warnings FATAL => 'all';
 # BEGIN{@ARGV=map decode_utf8($_,1),@ARGV;}
 # binmode(STDIN, ':utf8');
 # binmode(STDOUT, ':utf8');
-# use utf8::all 'GLOBAL';
+ use utf8::all 'GLOBAL';
 # use Encode::Locale;
 # #use CGI;
 # use POSIX;
@@ -36,7 +36,6 @@ system('logsave OnionShare/OnionShare.log onionshare --connect-timeout 150  --re
 #system('top  -b -n 10 > OnionShare/OnionShare.log'); # onionshare --connect-timeout 150
 
 open ($fh_read, "<", $filepath) or die("Can't read from $filepath for append: $!");
-
 
     while (<$fh_read>) {
         chomp;
