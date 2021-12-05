@@ -16,16 +16,6 @@ use warnings FATAL => 'all';
 # use utf8;
 
 
-# system('cd $HOME && touch ~/OnionShare/OnionShare.log');
-# my $log_filename = "OnionShare/OnionShare.log";
-# my $log_filehandle;
-# open( $log_filehandle, '>>', $log_filename )
-#     or die("Can't open $log_filename for append: $!");
-#
-# my $tee = IO::Tee->new( $log_filehandle, \*STDOUT );
-# system('top'); = *$tee{IO};
-# select $tee;
-
 my $fh_save;
 my $fh_read;
 my $filepath_with_URL = "OnionShare/OnionShare_URL.txt";
