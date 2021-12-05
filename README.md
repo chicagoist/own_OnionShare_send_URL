@@ -10,3 +10,17 @@ Script for working with crontab
 
 Данный скрипт запускает onionshare в режиме приёма файлов, сохраняет выхлоп с необходимым URL в файл директории,
 указанную в коде - я буду использовать Dropbox. 
+
+Depends :
+
+https://docs.onionshare.org/2.4/en/install.html#linux
+
+или: 
+
+sudo apt install onionshare // Ubuntu
+
+ sudo apt install psmisc
+
+ sudo apt install ttyrec
+
+
